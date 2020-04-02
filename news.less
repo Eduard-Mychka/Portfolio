@@ -1,0 +1,43 @@
+// main: ./style.less
+.news {
+  background-color: #fff;
+  margin-top: 14rem;
+  padding: 0 0 6rem 0;
+}
+
+.news__header {
+  margin-bottom: 1rem;
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+}
+
+.news__title {
+  margin: 0.5rem 0;
+  font-size: 3rem;
+  color: @black;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media @mobile {
+    font-size: 2rem;
+  }
+}
+
+.news__text {
+  font-size: 1.2rem;
+  color: @gray-light;
+  font-weight: 300;
+}
+
+.news__footer {
+  text-align: right;
+}
+
+.news__link {
+  font-size: 0.94rem;
+  color: @gray;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

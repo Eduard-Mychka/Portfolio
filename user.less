@@ -1,0 +1,36 @@
+// main: style.less
+.user {
+  display: flex;
+}
+
+.user__avatar {
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ff0000e7;
+  }
+}
+
+.user__content {
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.user__name {
+  font-size: 1.06rem;
+  color: @black;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.user__prof {
+  font-size: 0.9rem;
+  color: fade(@black, 80%);
+  letter-spacing: 1px;
+
+  @media @mobile-sm {
+    max-width: 160px;
+  }
+}

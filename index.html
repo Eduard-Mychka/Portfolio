@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/apple.png" type="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Condiment|Great+Vibes|Kaushan+Script|Molle:400i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Headerrrr -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__avatar">
+              <img src="img/img (1).jpeg" width="80" height="80" alt="" />
+            </div>
+            <div class="user__content">
+              <div class="user__name">Edward Mychka</div>
+              <div class="user__prof">Front-End Developer</div>
+            </div>
+          </div>
+
+          <!-- Navvvv -->
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#">work</a>
+            <a class="nav__link" href="#">about me</a>
+            <a class="nav__link" href="#">blog</a>
+            <a class="nav__link" href="#">contact</a>
+            <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
+          </nav>
+
+          <button class="burger" type="button" id="navToggle">
+            <img class="burger__icon" src="img/open-menu.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </header>
+   
+    <div class="page">
+    <!-- Introooo -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Hello i'm</h2>
+            <h1 class="intro__title">Edward Mychka</h1>
+            <div class="intro__text">Front-End Developer</div>
+
+            <div class="social">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <img
+                  src="img/instagram1.svg"
+                  title="Instagram"
+                  width="27"
+                  height="27"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://web.telegram.org/#/im"
+                target="_blank"
+              >
+                <img
+                  src="img/telegram.svg"
+                  title="Telegram"
+                  width="27"
+                  height="27"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+              >
+                <img
+                  src="img/linkedin.svg"
+                  title="Linkedin"
+                  width="27"
+                  height="27"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://mail.google.com/"
+                target="_blank"
+              >
+                <img
+                  src="img/gmail.svg"
+                  title="Gmail"
+                  width="27"
+                  height="27"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://github.com/Eduard-Mychka"
+                target="_blank"
+              >
+                <img
+                  src="img/github-image.svg"
+                  width="27"
+                  title="GitHub"
+                  height="27"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <img
+                  src="img/youtube.svg"
+                  title="Youtube"
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+              </a>
+            </div>
+            <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+            <a class="btn" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
+          </div>
+          <img class="intro__photo" src="img/photo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Worksss -->
+    <div class="works">
+      <div class="container">
+        <div class="works__nav">
+          <a class="works__nav-link" href="#" data-filter="all">All</a>
+          <a class="works__nav-link" href="#" data-filter="app">App</a>
+          <a class="works__nav-link" href="#" data-filter="websites">Websites</a>
+          <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
+        </div>
+
+        <!-- Portfoliooo -->
+        <div class="portfolio" id="portfolio">
+          <div class="portfolio__col" data-cat="app">
+            <div class="work" data-modal="#modal_project_1">
+              <img
+                class="work__image"
+                src="img/Program/w/depositphotos_2023.jpg"
+                alt=""
+              />
+              <div class="work__content">
+                <div class="work__cat">Category: app</div>
+                <div class="work__title">
+                  Project title
+                  <time class="work__date" datetime="2020-03-31">2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="websites">
+            <div class="work" data-modal="#modal_project_2">
+              <img
+                class="work__image"
+                src="img/Program/w/depositphotos_17.jpg"
+                alt=""
+              />
+              <div class="work__content">
+                <div class="work__cat">Category: website</div>
+                <div class="work__title">
+                  Project title
+                  <time class="work__date" datetime="2020-03-31">2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="interaction">
+            <div class="work" data-modal="#modal_project_3">
+              <img
+                class="work__image"
+                src="img/Program/w/depositphotos_202.jpg"
+                alt=""
+              />
+              <div class="work__content">
+                <div class="work__cat">Category: interaction</div>
+                <div class="work__title">
+                  Project title
+                  <time class="work__date" datetime="2020-03-31">2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="websites">
+            <div class="work" data-modal="#modal_project_4">
+              <img
+                class="work__image"
+                src="img/Program/w/photo-1569012871812-f38ee64cd54c.jpeg"
+                alt=""
+              />
+              <div class="work__content">
+                <div class="work__cat">Category: website</div>
+                <div class="work__title">
+                  Project title
+                  <time class="work__date" datetime="2020-03-31">2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="interaction">
+            <div class="work">
+              <img
+                class="work__image"
+                src="img/Program/w/photo-1555099962-4199c345e5dd.jpeg"
+                alt=""
+              />
+              <div class="work__content">
+                <div class="work__cat">Category: interaction</div>
+                <div class="work__title">
+                  Project title
+                  <time class="work__date" datetime="2020-03-31">2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__col" data-cat="app">
+            <div class="work">
+              <img
+                class="work__image"
+                src="img/Program/w/depositphotos_83.jpg"
+                alt=""
+              />
+              <div class="work__content">
+                <div class="work__cat">Category: app</div>
+                <div class="work__title">
+                  Project title
+                  <time class="work__date" datetime="2020-03-31">2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="btn btn--sm" href="#">LOAD MORE WORK</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aboutttt -->
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__photo">
+            <img class="img" src="img/designer_photo.png" alt="" />
+          </div>
+          <div class="about__content">
+            <h3 class="about__title">ABOUT ME</h3>
+            <h2 class="about__bigtitle">WHO AM I</h2>
+            <div class="about__text">
+              <p>
+                Expedita dolorem excepturi magnam voluptatem eaque debitis
+                praesentium sint adipisci obcaecati reprehenderit, atque eum
+                perspiciatis mollitia perferendis iste suscipit incidunt. Sunt,
+                officia?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem a autem quas sit temporibus consequuntur! Nulla
+                repudiandae architecto aliquid sequi asperiores vel ipsum
+                accusamus.
+              </p>
+              <p>
+                And eligendi asperiores debitis officiis quia. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Animi architecto
+                exercitationem fugit est recusandae quaerat ea provident,
+                delectus libero natus porro, minus aperiam quis. Iste velit
+                reprehenderit natus officia quae.
+              </p>
+            </div>
+            <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+            <a class="btn" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviewsss -->
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__item">
+          <div class="reviews__text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              voluptate! Laboriosam ad, quisquam voluptatibus tempora corrupti
+              provident vero mollitia dignissimos a veritatis qui odit explicabo
+              vitae est, consectetur quod inventore! Odio fuga dolorum quam ab,
+              tempora expedita eos sequi quasi sint? Inventore non omnis magnam
+              ad impedit tempora autem doloremque dignissimos alias.
+            </p>
+          </div>
+          <div class="reviews__author">
+            <img
+              class="reviews__photo"
+              src="img/64_n.jpg"
+              width="120"
+              height="120"
+              alt=""
+            />
+            <div class="reviews__name">Edward Mychka</div>
+            <div class="reviews__company">Apple company. USA</div>
+            <div class="reviews__rating">
+              <img
+                class="reviews__star"
+                src="img/star.svg"
+                width="13"
+                height="13"
+                alt=""
+              />
+              <img
+                class="reviews__star"
+                src="img/star.svg"
+                width="13"
+                height="13"
+                alt=""
+              />
+              <img
+                class="reviews__star"
+                src="img/star.svg"
+                width="13"
+                height="13"
+                alt=""
+              />
+              <img
+                class="reviews__star"
+                src="img/star.svg"
+                width="13"
+                height="13"
+                alt=""
+              />
+              <img
+                class="reviews__star reviews__star--unactive"
+                src="img/star.svg"
+                width="13"
+                height="13"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsss -->
+    <section class="news">
+      <div class="container">
+        <div class="news__header">
+          <h3 class="news__title">read me</h3>
+          <div class="news__text">Sometimes i write something smart</div>
+        </div>
+
+        <div class="articles">
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">2<br />June</time>
+                <a href="#">
+                  <img
+                    class="articles__photo"
+                    src="img/6 fotos/240_F_209705645_b78HGJI1i1mxqLwMYA7z1m3VvCxgxJFO.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="articles__content">
+                <h3 class="articles__title">
+                  <a href="#">meeting in new york 2020</a>
+                </h3>
+                <div class="articles__cat">CATEGORY</div>
+                <div class="articles__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda, perspiciatis! Corporis illo quibusdam adipisci
+                    dicta maxime sint et minus esse iusto velit? Blanditiis sint
+                    consectetur cupiditate accusantium soluta debitis tenetur?
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">6<br />June</time>
+                <a href="#">
+                  <img
+                    class="articles__photo"
+                    src="img/6 fotos/depositphotos_12462950-stock-photo-color-of-autumn-in-paris.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="articles__content">
+                <h3 class="articles__title">
+                  <a href="#">meeting in paris 2020</a>
+                </h3>
+                <div class="articles__cat">CATEGORY</div>
+                <div class="articles__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda, perspiciatis! Corporis illo quibusdam adipisci
+                    dicta maxime sint et minus esse iusto velit? Blanditiis sint
+                    consectetur cupiditate accusantium soluta debitis tenetur?
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">10<br />June</time>
+                <a href="#">
+                  <img
+                    class="articles__photo"
+                    src="img/6 fotos/depositphotos_48011107-stock-photo-los-angeles.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="articles__content">
+                <h3 class="articles__title">
+                  <a href="#">meeting in Los Angeles 2020</a>
+                </h3>
+                <div class="articles__cat">CATEGORY</div>
+                <div class="articles__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda, perspiciatis! Corporis illo quibusdam adipisci
+                    dicta maxime sint et minus esse iusto velit? Blanditiis sint
+                    consectetur cupiditate accusantium soluta debitis tenetur?
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">16<br />June</time>
+                <a href="#">
+                  <img
+                    class="articles__photo"
+                    src="img/6 fotos/depositphotos_48610805-stock-photo-warsaw-poland.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="articles__content">
+                <h3 class="articles__title">
+                  <a href="#">meeting in warsaw, pol. 2020</a>
+                </h3>
+                <div class="articles__cat">CATEGORY</div>
+                <div class="articles__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda, perspiciatis! Corporis illo quibusdam adipisci
+                    dicta maxime sint et minus esse iusto velit? Blanditiis sint
+                    consectetur cupiditate accusantium soluta debitis tenetur?
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">22<br />June</time>
+                <a href="#">
+                  <img
+                    class="articles__photo"
+                    src="img/6 fotos/depositphoлондон.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="articles__content">
+                <h3 class="articles__title">
+                  <a href="#">meeting in london 2020</a>
+                </h3>
+                <div class="articles__cat">CATEGORY</div>
+                <div class="articles__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda, perspiciatis! Corporis illo quibusdam adipisci
+                    dicta maxime sint et minus esse iusto velit? Blanditiis sint
+                    consectetur cupiditate accusantium soluta debitis tenetur?
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="articles__col">
+            <div class="articles__item">
+              <div class="articles__header">
+                <time class="articles__date">30<br />June</time>
+                <a href="#">
+                  <img
+                    class="articles__photo"
+                    src="img/6 fotos/base_сингапур.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="articles__content">
+                <h3 class="articles__title">
+                  <a href="#">meeting in singapore 2020</a>
+                </h3>
+                <div class="articles__cat">CATEGORY</div>
+                <div class="articles__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda, perspiciatis! Corporis illo quibusdam adipisci
+                    dicta maxime sint et minus esse iusto velit? Blanditiis sint
+                    consectetur cupiditate accusantium soluta debitis tenetur?
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--sm" href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="news__footer">
+          <a class="news__link" href="#">See more posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footerrr -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__credits">
+            <div class="footer__copyright">
+              &copy; 2020 UA20 - Free Templates
+            </div>
+            <div class="footer__social">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <img
+                  class="footer__icons"
+                  src="img/instagram.svg"
+                  title="Instagram"
+                  width="22"
+                  height="22"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://web.telegram.org/#/im"
+                target="_blank"
+              >
+                <img
+                  class="footer__icons"
+                  src="img/telegram2.svg"
+                  title="Telegram"
+                  width="22"
+                  height="22"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+              >
+                <img
+                  class="footer__icons"
+                  src="img/linkedin2.svg"
+                  title="Linkedin"
+                  width="22"
+                  height="22"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://mail.google.com/"
+                target="_blank"
+              >
+                <img
+                  class="footer__icons"
+                  src="img/gmail2.svg"
+                  title="Gmail"
+                  width="22"
+                  height="22"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://github.com/Eduard-Mychka"
+                target="_blank"
+              >
+                <img
+                  class="footer__icons"
+                  src="img/github-image.svg"
+                  width="22"
+                  title="GitHub"
+                  height="22"
+                  alt=""
+                />
+              </a>
+              <a
+                class="social__link"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <img
+                  class="footer__icons"
+                  src="img/youtube2.svg"
+                  title="Youtube"
+                  width="22"
+                  height="22"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#">Work</a>
+            <a class="footer__nav-link" href="#">About me</a>
+            <a class="footer__nav-link" href="#">Blog</a>
+            <a class="footer__nav-link" href="#">Contact</a>
+            <a class="footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="modal_project_1">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/remove.svg" width="34" height="39" alt="Close" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data_slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-1.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-2.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modall-work__title">Project title</h3>
+              <div class="modal-work__info">
+                Category <span class="modal-work__info-divider">|</span> 2020
+              </div>
+            </div>
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Client:</div>
+              <div class="modal-work__client-company">Creative Agency</div>
+              <div class="modal-work__text">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias accusantium quae incidunt dolorem vel mollitia
+                  quaerat quia eos voluptates velit recusandae, sunt dolorum
+                  ipsa et aliquam praesentium harum!Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Voluptates illum doloremque quam
+                  distinctio repudiandae eveniet iure, nisi beatae recusandae
+                  officiis.
+                </p>
+              </div>
+              <div class="modal-work__footer">
+                <button class="modal-work__btn slickPrev" type="button">
+                  <img src="img/back-left (1).svg" height="11" alt="" />
+                  Previous
+                </button>
+                <button class="modal-work__btn slickNext" type="button">
+                  Next
+                  <img src="img/next.svg" height="11" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" id="modal_project_2">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/remove.svg" width="34" height="39" alt="Close" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data_slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-9.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-5.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-6.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modall-work__title">Project title 2</h3>
+              <div class="modal-work__info">
+                Category <span class="modal-work__info-divider">|</span> 2020
+              </div>
+            </div>
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Client:</div>
+              <div class="modal-work__client-company">Creative Agency</div>
+              <div class="modal-work__text">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias accusantium quae incidunt dolorem vel mollitia
+                  quaerat quia eos voluptates velit recusandae, sunt dolorum
+                  ipsa et aliquam praesentium harum!Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Voluptates illum doloremque quam
+                  distinctio repudiandae eveniet iure, nisi beatae recusandae
+                  officiis.
+                </p>
+              </div>
+              <div class="modal-work__footer">
+                <button class="modal-work__btn slickPrev" type="button">
+                  <img src="img/back-left (1).svg" height="11" alt="" />
+                  Previous
+                </button>
+                <button class="modal-work__btn slickNext" type="button">
+                  Next
+                  <img src="img/next.svg" height="11" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_project_3">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/remove.svg" width="34" height="39" alt="Close" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data_slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-8.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-7.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-4.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modall-work__title">Project title 3</h3>
+              <div class="modal-work__info">
+                Category <span class="modal-work__info-divider">|</span> 2020
+              </div>
+            </div>
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Client:</div>
+              <div class="modal-work__client-company">Creative Agency</div>
+              <div class="modal-work__text">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias accusantium quae incidunt dolorem vel mollitia
+                  quaerat quia eos voluptates velit recusandae, sunt dolorum
+                  ipsa et aliquam praesentium harum!Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Voluptates illum doloremque quam
+                  distinctio repudiandae eveniet iure, nisi beatae recusandae
+                  officiis.
+                </p>
+              </div>
+              <div class="modal-work__footer">
+                <button class="modal-work__btn slickPrev" type="button">
+                  <img src="img/back-left (1).svg" height="11" alt="" />
+                  Previous
+                </button>
+                <button class="modal-work__btn slickNext" type="button">
+                  Next
+                  <img src="img/next.svg" height="11" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_project_4">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/remove.svg" width="34" height="39" alt="Close" />
+        </button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data_slider="slick">
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-13.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-10.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <img
+                  class="modal-work__photo"
+                  src="img/modal/photo-11.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modall-work__title">Project title 4</h3>
+              <div class="modal-work__info">
+                Category <span class="modal-work__info-divider">|</span> 2020
+              </div>
+            </div>
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Client:</div>
+              <div class="modal-work__client-company">Creative Agency</div>
+              <div class="modal-work__text">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias accusantium quae incidunt dolorem vel mollitia
+                  quaerat quia eos voluptates velit recusandae, sunt dolorum
+                  ipsa et aliquam praesentium harum!Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Voluptates illum doloremque quam
+                  distinctio repudiandae eveniet iure, nisi beatae recusandae
+                  officiis.
+                </p>
+              </div>
+              <div class="modal-work__footer">
+                <button class="modal-work__btn slickPrev" type="button">
+                  <img src="img/back-left (1).svg" height="11" alt="" />
+                  Previous
+                </button>
+                <button class="modal-work__btn slickNext" type="button">
+                  Next
+                  <img src="img/next.svg" height="11" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_resume">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/remove.svg" width="34" height="39" alt="" />
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title text-center">resume</h3>
+          <div class="text-center">
+            <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
+            <a class="btn btn--thin" href="#">PRINT</a>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline__col timeline__col--left">
+              <h4 class="timeline__title">EXPERIENCE</h4>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020"
+                  >2017 - <b>Present</b></time
+                >
+                <h5 class="timeline__subtitle">Freelancer</h5>
+                <div class="timeline__position">Art Director</div>
+                <div class="timeline__text">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur voluptate blanditiis nesciunt! Tempora, nemo, est
+                    quibusdam quisquam ipsam ex assumenda laborum laboriosam
+                    explicabo veniam tempore sed neque, doloremque distinctio
+                    consequuntur.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020"
+                  >2016 - 2017</time
+                >
+                <h5 class="timeline__subtitle">The Best Agency</h5>
+                <div class="timeline__position">Art Director</div>
+                <div class="timeline__text">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur voluptate blanditiis nesciunt! Tempora, nemo, est
+                    quibusdam quisquam ipsam ex assumenda laborum laboriosam
+                    explicabo veniam tempore sed neque, doloremque distinctio
+                    consequuntur.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020"
+                  >2014 - 2016</time
+                >
+                <h5 class="timeline__subtitle">Better Agency</h5>
+                <div class="timeline__position">Senior UI/UX Designer</div>
+                <div class="timeline__text">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur voluptate blanditiis nesciunt! Tempora, nemo, est
+                    quibusdam quisquam ipsam ex assumenda laborum laboriosam
+                    explicabo veniam tempore sed neque, doloremque distinctio
+                    consequuntur.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020"
+                  >2012 - 2014</time
+                >
+                <h5 class="timeline__subtitle">Good Agency</h5>
+                <div class="timeline__position">UI/UX Designer</div>
+                <div class="timeline__text">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur voluptate blanditiis nesciunt! Tempora, nemo, est
+                    quibusdam quisquam ipsam ex assumenda laborum laboriosam
+                    explicabo veniam tempore sed neque, doloremque distinctio
+                    consequuntur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__col timeline__col--right">
+              <h4 class="timeline__title">EDUCATION</h4>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020"
+                  >2005 - 2010</time
+                >
+                <h5 class="timeline__subtitle">UI/UX Design</h5>
+                <div class="timeline__position">LA University, USA</div>
+              </div>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020"
+                  >2002 - 2005</time
+                >
+                <h5 class="timeline__subtitle">UI/UX Design</h5>
+                <div class="timeline__position">LA Collage of Art, USA</div>
+              </div>
+
+              <h4 class="timeline__title">Skills</h4>
+              <div class="progress-bar">
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">UI/UX Design</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 80%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">I Ilustrator</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 60%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Photoshop</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 90%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Skets</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 75%;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="timeline__title">Awards</h4>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020">2016</time>
+                <h5 class="timeline__subtitle">THE BEST APP INTERFACE</h5>
+                <div class="timeline__position">UI/UX Magazine</div>
+                <div class="timeline__text">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur voluptate blanditiis nesciunt! Tempora, nemo, est
+                    quibusdam quisquam ipsam ex assumenda.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="03-30-2020">2016</time>
+                <h5 class="timeline__subtitle">THE BEST WEBSITE</h5>
+                <div class="timeline__position">UI/UX Magazine</div>
+                <div class="timeline__text">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur voluptate blanditiis nesciunt! Tempora, nemo, est
+                    quibusdam quisquam ipsam ex assumenda laborum laboriosam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="btn" href="#" data-modal="#modal_hire_me">Hire me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal_hire_me">
+      <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button" data-close>
+          <img src="img/remove.svg" width="34" height="39" alt="" />
+        </button>
+
+        <div class="contact">
+          <div class="contact__left">
+            <h3 class="modal__title mb-0">LET'S TALK!</h3>
+            <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
+            <ul class="contact__info">
+              <li class="contact__info-item">
+                <img
+                  class="contact__info-icon"
+                  src="img/call.svg"
+                  width="19"
+                  height="19"
+                  alt=""
+                />
+                +380 63 561 4252
+              </li>
+              <li class="contact__info-item">
+                <img
+                  class="contact__info-icon"
+                  src="img/email1.svg"
+                  width="21"
+                  height="21"
+                  alt=""
+                />
+                edmychka@gmail.com
+              </li>
+            </ul>
+
+            <form class="form" action="/" method="POST">
+              <div class="form__group">
+                <label class="form__label" for="input-email"
+                  >Adress e-mail</label
+                >
+                <input
+                  class="form__input"
+                  name="input-email"
+                  type="text"
+                  id="input-email"
+                  placeholder="Adress e-mail"
+                />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="input-text">Request</label>
+                <textarea
+                  class="form__textarea"
+                  name="input-text"
+                  id="input-text"
+                  placeholder="Type your request..."
+                ></textarea>
+              </div>
+              <div class="text-right">
+                <button class="btn" type="button">SEND</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact__right">
+            <img src="img/66_n.jpg" width="100%" height="100%" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+    <script src="slick.min.js"></script>
+  </body>
+</html>
