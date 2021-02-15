@@ -1,3 +1,3 @@
 # Portfolio
 
-https://eduard-mychka.github.io/Portfolio/
+https://eduard-mychka.github.io/portfolio/
